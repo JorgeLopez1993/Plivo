@@ -1,5 +1,5 @@
 <Response>
-<GetDigits action="https://s3-eu-west-1.amazonaws.com/mans-answers/answer.xml" method="POST">
+<GetDigits action="https://s3-eu-west-1.amazonaws.com/mans-answers/answer.xml" method="GET">
 <Speak language="es-ES" voice="WOMAN">Tiene una alarmas</Speak>
 <Speak language="es-ES" voice="WOMAN">Pulsa 1 para aceptar la alarma</Speak>
 </GetDigits>
