@@ -1,4 +1,3 @@
-
 <Response>
 <GetDigits action="https://s3-eu-west-1.amazonaws.com/mans-answers/answer.xml" method="POST">
 <Speak language="es-ES" voice="WOMAN">Tiene una alarmas</Speak>
