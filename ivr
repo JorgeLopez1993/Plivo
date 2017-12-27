@@ -1,13 +1,13 @@
 from flask import Flask, Response, request
 import plivoxml
-
+PLIVO_SONG="https://s3-eu-west-1.amazonaws.com/mans-answers/answer.xml"
 app=Flask(__name__)
 
-@app.route('/get_digits/phone_tree/', methods=['GET','POST'])
-def phone_tree():
+@app.route('/master/ivr/', methods=['GET','POST'])
+def ivr():
 	response = plivoxml.Response()
 	params = {
-		'action' : "http://www.foo.com/gather_pin/",
+		'action' : "",
 		'method' : "POST"
 	}
 	getDigits = response.addGetDigits(**params)
