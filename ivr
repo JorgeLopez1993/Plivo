@@ -19,7 +19,7 @@ WRONG_INPUT_MESSAGE = "Sorry, it's wrong input."
 
 app = Flask(__name__)
 
-@app.route('/response/ivr/', methods=['GET','POST'])
+@app.route('/Plivo/ivr/', methods=['GET','POST'])
 def ivr():
     response = plivoxml.Response()
     if request.method == 'GET':
