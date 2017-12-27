@@ -1,0 +1,22 @@
+from flask import Flask, Response, request
+import plivoxml
+
+app=Flask(__name__)
+
+@app.route('/get_digits/phone_tree/', methods=['GET','POST'])
+def phone_tree():
+	response = plivoxml.Response()
+	params = {
+		'action' : "http://www.foo.com/gather_pin/",
+		'method' : "POST"
+	}
+	getDigits = response.addGetDigits(**params)
+	getDigits.addSpeak("Enter pin number followed by hash key")
+	
+	response.addSpeak("Input not received. Thank you.")
+	return Response(str(response), mimetype='text/xml')
+
+
+
+if __name__ == "__main__":
+	app.run(host='0.0.0.0', debug=True)
