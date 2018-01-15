@@ -1,6 +1,5 @@
-
 <Response>
-    <Dial confirmSound="https://ugyn9ecx0a.execute-api.eu-west-1.amazonaws.com/prod/plivonumber5" confirmKey="5">
-        <Number>34678019008</Number>      
-    </Dial>
+    <GetDigits action="https://ugyn9ecx0a.execute-api.eu-west-1.amazonaws.com/prod/plivonumber5" method="POST">
+        <Speak>Enter 5 for end</Speak>
+    </GetDigits>
 </Response>
