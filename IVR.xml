@@ -1,5 +1,6 @@
 <Response>
     <GetDigits action="https://ugyn9ecx0a.execute-api.eu-west-1.amazonaws.com/prod/plivonumber5" method="POST">
-        <Speak>Enter 5 for end</Speak>
+        <Speak language="es-ES" voice="WOMAN" >Pulse 5 para confirmar</Speak>
+        <Speak language="es-ES" voice="WOMAN" >Pulse 1 para repetir el mensaje</Speak>
     </GetDigits>
 </Response>
