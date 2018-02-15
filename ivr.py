@@ -13,7 +13,7 @@ NO_INPUT_MESSAGE='Vuelva a introducir el digito'
 
 app=Flask(__name__)
 
-@app.route('response/ivr',methods=['GET','POST'])
+@app.route('Plivo',methods=['GET','POST'])
 
 def ivr():
     response=plivoxml.Response()
