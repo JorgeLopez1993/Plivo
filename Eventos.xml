@@ -1,0 +1,7 @@
+<Response>
+    <GetDigits action="https://ugyn9ecx0a.execute-api.eu-west-1.amazonaws.com/prod/plivonumber5" method="POST">
+        <Speak language="es-ES" voice="WOMAN" >Tiene que atender una alarma debido a varios eventos</Speak>
+        <Speak language="es-ES" voice="WOMAN" >Pulse 5 para aceptar el mensaje</Speak>
+        <Speak language="es-ES" voice="WOMAN" >Pulse 9 para repetir el mensaje</Speak>
+    </GetDigits>
+</Response>
